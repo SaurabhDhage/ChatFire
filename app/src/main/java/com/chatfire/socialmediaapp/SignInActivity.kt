@@ -1,14 +1,13 @@
-package com.example.socialmediaapp
+package com.chatfire.socialmediaapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.example.socialmediaapp.daos.UserDao
-
+import com.chatfire.socialmediaapp.daos.UserDao
+import com.chatfire.socialmediaapp.models.User
 import com.example.socialmediaapp.databinding.ActivitySignInBinding
-import com.example.socialmediaapp.models.User
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -29,7 +28,7 @@ import kotlinx.coroutines.withContext
 
 class SignInActivity : AppCompatActivity() {
     private val RC_SIGN_IN: Int=123
-    private lateinit var  binding:ActivitySignInBinding
+    private lateinit var  binding: ActivitySignInBinding
     private lateinit var googleSignInClient:GoogleSignInClient
     private val TAG="SignIn Activity"
     private lateinit var auth: FirebaseAuth

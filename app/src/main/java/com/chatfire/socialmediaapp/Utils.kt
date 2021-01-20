@@ -1,4 +1,4 @@
-package com.example.socialmediaapp
+package com.chatfire.socialmediaapp
 
 class Utils {
     companion object {

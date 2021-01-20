@@ -1,4 +1,4 @@
-package com.example.socialmediaapp.models
+package com.chatfire.socialmediaapp.models
 
 data class Post(
         val text: String = "",

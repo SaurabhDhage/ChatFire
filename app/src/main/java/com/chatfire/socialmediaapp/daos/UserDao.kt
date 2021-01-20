@@ -1,13 +1,12 @@
-package com.example.socialmediaapp.daos
+package com.chatfire.socialmediaapp.daos
 
-import com.example.socialmediaapp.models.User
+import com.chatfire.socialmediaapp.models.User
 import com.google.android.gms.tasks.Task
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class UserDao {
     private val db = FirebaseFirestore.getInstance()

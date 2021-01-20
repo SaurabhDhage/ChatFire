@@ -1,8 +1,8 @@
-package com.example.socialmediaapp
+package com.chatfire.socialmediaapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.socialmediaapp.daos.PostDao
+import com.chatfire.socialmediaapp.daos.PostDao
 import com.example.socialmediaapp.databinding.ActivityCreatePostBinding
 
 class CreatePostActivity : AppCompatActivity() {

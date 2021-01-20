@@ -1,4 +1,4 @@
-package com.example.socialmediaapp
+package com.chatfire.socialmediaapp
 
 
 import android.content.Intent
@@ -9,9 +9,9 @@ import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.socialmediaapp.daos.PostDao
+import com.chatfire.socialmediaapp.daos.PostDao
+import com.chatfire.socialmediaapp.models.Post
 import com.example.socialmediaapp.databinding.ActivityMainBinding
-import com.example.socialmediaapp.models.Post
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.Query
@@ -20,7 +20,7 @@ import com.google.firebase.ktx.Firebase
 class MainActivity : AppCompatActivity(), IPostAdapter {
     private lateinit var postDao: PostDao
     private lateinit var adapter:PostAdapter
-    private lateinit var binding:ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
        binding=ActivityMainBinding.inflate(layoutInflater)

@@ -1,7 +1,7 @@
-package com.example.socialmediaapp.daos
+package com.chatfire.socialmediaapp.daos
 
-import com.example.socialmediaapp.models.Post
-import com.example.socialmediaapp.models.User
+import com.chatfire.socialmediaapp.models.Post
+import com.chatfire.socialmediaapp.models.User
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.DocumentSnapshot
